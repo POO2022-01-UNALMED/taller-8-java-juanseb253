@@ -15,12 +15,12 @@ public class Jugador extends Futbolista{
 		this.dorsal = dorsal;
 	}
 	
-	public int compareTo(Jugador j) {
-		if (j.getEdad() > getEdad()) {
-			return j.getEdad() - getEdad();		
+	public int compareTo(Object j) {
+		if (((Jugador)j).getEdad() > getEdad()) {
+			return ((Jugador)j).getEdad() - getEdad();		
 		}
 		else {
-			return getEdad() - j.getEdad();
+			return getEdad() - ((Jugador)j).getEdad();
 		}
 	}
 	public String toString() {

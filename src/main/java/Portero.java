@@ -12,16 +12,15 @@ public class Portero extends Futbolista{
 	public String toString() {
 		return "El futbolista " + getNombre() + " tiene " + getEdad() + ", y juega de " + getPosicion() + " con el dorsal " + dorsal + ". Le han marcado " + golesRecibidos;
 	}
-	public int compareTo(Portero p) {
-		if (p.golesRecibidos > golesRecibidos) {
-			return p.golesRecibidos - golesRecibidos;
+	public int compareTo(Object p) {
+		if (((Portero)p).golesRecibidos > golesRecibidos) {
+			return ((Portero)p).golesRecibidos - golesRecibidos;
 		}
 		else {
-			return golesRecibidos - p.golesRecibidos;
+			return golesRecibidos - ((Portero)p).golesRecibidos;
 		}
 	}
 	public boolean jugarConLasManos() {
 		return true;
 	}
-
 }
