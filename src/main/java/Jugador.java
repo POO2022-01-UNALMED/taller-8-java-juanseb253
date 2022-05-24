@@ -29,7 +29,4 @@ public class Jugador extends Futbolista{
 	public boolean jugarConLasManos() {
 		return false;
 	}
-	public int compareTo(Futbolista t) {
-		return 1;
-	}
 }
