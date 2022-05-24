@@ -23,4 +23,7 @@ public class Portero extends Futbolista{
 	public boolean jugarConLasManos() {
 		return true;
 	}
+	public int compareTo(Futbolista t) {
+		return 1;
+	}
 }
