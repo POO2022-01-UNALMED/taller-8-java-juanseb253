@@ -3,7 +3,7 @@ package futbol;
 public abstract class Futbolista implements Comparable<Object>{
 	private String nombre;
 	private int edad;
-	private String posicion;
+	private final String posicion;
 	
 	public Futbolista() {
 		this("Maradona", 30, "delantero");
@@ -40,7 +40,7 @@ public abstract class Futbolista implements Comparable<Object>{
 		}
 	}
 	public abstract boolean jugarConLasManos();
-	public int compareTo(Futbolista f) {
+	public int compareTo(Object f) {
 		return 1;
 	}
 	
